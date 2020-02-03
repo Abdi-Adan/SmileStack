@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smile_stack/InitializeApp/LoginPage.dart';
+import 'package:smile_stack/Screens/HomePage.dart';
 
 class SignUp extends StatefulWidget {
   @override

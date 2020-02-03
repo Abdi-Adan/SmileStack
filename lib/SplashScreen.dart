@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:smile_stack/Animations/FadeAnimation.dart';
-import 'package:smile_stack/InitializeApp/Onboarding.dart';
+import 'package:smile_stack/InitializeApp/Onboarding/Onboarding.dart';
 
 
 class SplashPage extends StatefulWidget {
@@ -23,7 +24,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    // TODO: implement initState
+    // implement initState
     super.initState();
 
     _scaleController =

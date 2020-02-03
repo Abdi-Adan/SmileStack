@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:smile_stack/InitializeApp/Onboarding/OnOne.dart';
 import 'package:smile_stack/InitializeApp/Onboarding/OnThree.dart';
 import 'package:smile_stack/InitializeApp/Onboarding/OnTwo.dart';
@@ -46,7 +47,7 @@ class _OnboardingState extends State<Onboarding> {
                     children: <Widget>[
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(CustomIcons.shoppingBag),
+                        icon: Icon(Icons.shopping_cart),
                       ),
                       Positioned(
                         right: 10,
