@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:smile_stack/Animations/FadeAnimation.dart';
-import 'package:smile_stack/InitializeApp/Onboarding/Onboarding.dart';
-
+// import 'package:smile_stack/InitializeApp/Onboarding/Onboarding.dart';
+import 'package:smile_stack/InitializeApp/SignIn.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -66,16 +66,14 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
     _scale2Controller =
         AnimationController(vsync: this, duration: Duration(milliseconds: 300));
 
-    _scale2Animation =
-        Tween<double>(begin: 1.0, end: 32.0).animate(_scale2Controller)
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed) {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      type: PageTransitionType.fade, child: Onboarding()));
-            }
-          });
+    _scale2Animation = Tween<double>(begin: 1.0, end: 32.0).animate(
+        _scale2Controller)
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) {
+          Navigator.push(context,
+              PageTransition(type: PageTransitionType.fade, child: SignUp()));
+        }
+      });
   }
 
   @override
